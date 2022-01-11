@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './component/App/App';
-// import s from '../src/component/App/App.module.css';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+// import 'modern-normalize/modern-normalize.css';
 import './index.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 ReactDOM.render(
-  <React.StrictMode>{/* <App className={s.app} /> */}</React.StrictMode>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
   document.getElementById('root'),
 );
